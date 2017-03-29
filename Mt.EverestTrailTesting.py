@@ -4,7 +4,7 @@ while gamemenu > 0:
     if gamemenu is "2":
         input("The hike up Mount Everest is a long and difficult journey. It is filled with Hazards and danger.")
     if gamemenu is "3":
-        
+        input("This part of the Mount Everest Trail is under contruction right now.")
     if gamemenu is "4":
         
     if gamemenu is "1":
