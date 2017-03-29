@@ -2,7 +2,7 @@ gamemenu=input("Welcome to Kathmandu! You may: Press 1 to Start the Hike, press 
 
 while gamemenu > 0:
     if gamemenu is "2":
-        
+        input("The hike up Mount Everest is a long and difficult journey. It is filled with Hazards and danger.")
     if gamemenu is "3":
         
     if gamemenu is "4":
