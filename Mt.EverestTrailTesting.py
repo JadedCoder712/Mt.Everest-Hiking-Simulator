@@ -53,6 +53,9 @@ if itemmenu is "1":
         storemenu=input("Welcome to Mt. Everest Equipment Store! We sell at the lowest prices in all of the Himalayas. We sell: 1. Rations, 2. Clothes, 3. Ice picks, 4. Tents, 5. Fuel, 6. Water, 7. Review what you already have, 8. Leave store. What would you like to buy/choose?")
         if storemenu is "1":
             rationsinp=input("Rations are sold in packs of ten. How many packs of rations would you like to buy at $14 each?")
+            maxrations=round(money-(int(rationsinp)*14))
+            if maxrations > 0:
+                
         if storemenu is "2":
             
         if storemenu is "3":
