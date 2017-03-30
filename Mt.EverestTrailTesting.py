@@ -1,4 +1,3 @@
-
 rations=0
 clothes=0
 ice_picks=0
