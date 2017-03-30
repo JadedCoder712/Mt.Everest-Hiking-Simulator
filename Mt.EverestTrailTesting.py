@@ -36,4 +36,4 @@ while truthholder is True:
         truthholder=False
 if store is "1":
     while truthholder is False:
-        itemmenu=input("You have {0} rations
+        itemmenu=input("You have {0} rations, {1} sets of clothes, {2} ice picks, {3} 
