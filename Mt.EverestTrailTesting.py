@@ -68,10 +68,13 @@ if item_menu is "1":
                             endless_loop=False
                         if rations_menu is "2":
                             rations_loop=False
+                            endless_loop=False
                         if rations_menu is "3":
                             are_you_sure=input("Are you sure you would like to leave the store and stop buying supplies?")
                             if are_you_sure is "yes":
                                 false_holder=False
+                                rations_loop=False
+                                endless_loop=False 
                     
         """
         if store_menu is "2":
@@ -93,5 +96,4 @@ if item_menu is "1":
 if the_hike==1:
     input("The hike will continue from here.")
             
-                    
             
