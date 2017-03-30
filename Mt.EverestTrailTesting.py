@@ -1,4 +1,3 @@
-import sys
 truthholder=True
 while truthholder is True:
     gamemenu=input("Welcome to Kathmandu! You may: Press 1 to Start the Hike, press 2 to learn more about the trek up Mt. Everest, press 3 to see the map of the Mt. Everest trek, or press 4 to quit the program.")
@@ -7,7 +6,7 @@ while truthholder is True:
     if gamemenu is "3":
         input("This part of the Mount Everest Trail is under contruction right now. Press Enter to continue.")
     if gamemenu is "4":
-        sys.exit(0)
+        raise SystemExit("Goodbye")
     if gamemenu is "1":
         truthholder=False
 while truthholder is False:
