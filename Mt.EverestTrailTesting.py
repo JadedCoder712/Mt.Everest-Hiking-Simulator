@@ -52,10 +52,22 @@ if itemmenu is "1":
     while falseholder is True:
         storemenu=input("Welcome to Mt. Everest Equipment Store! We sell at the lowest prices in all of the Himalayas. We sell: 1. Rations, 2. Clothes, 3. Ice picks, 4. Tents, 5. Fuel, 6. Water, 7. Review what you already have, 8. Leave store. What would you like to buy/choose?")
         if storemenu is "1":
-            rationsinp=input("Rations are sold in packs of ten. How many packs of rations would you like to buy at $14 each?")
-            maxrations=round(money-(int(rationsinp)*14))
-            if maxrations > 0:
-                
+            rationsloop=True
+            while rationsloop is True:
+                rationsinp=input("Rations are sold in packs of ten. How many packs of rations would you like to buy at $14 each?")
+                maxrations=round(money-(int(rationsinp)*14))
+                if maxrations < 0:
+                    input("You do not have enough money to buy all those! Press Enter to continue.")
+                if maxrations >= 0:
+                    rations=rations+(int(rationsinp)*10)
+                    money=money-(int(rationsinp)*14)
+                    rationsmenu=input("You have {0} dollars left. Press: 1. to buy more rations, 2. Go back to store, 3. Leave the store.".format(money))
+                    if rationsmenu is "2":
+                        rationsloop=False
+                    if rationsmenu is "3"
+                        areyousure=input("Are you sure you would like to leave the store and stop buying supplies?")
+                    
+                    
         if storemenu is "2":
             
         if storemenu is "3":
