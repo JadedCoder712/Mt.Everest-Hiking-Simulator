@@ -61,12 +61,19 @@ if itemmenu is "1":
                 if maxrations >= 0:
                     rations=rations+(int(rationsinp)*10)
                     money=money-(int(rationsinp)*14)
-                    rationsmenu=input("You have {0} dollars left. Press: 1. to buy more rations, 2. Go back to store, 3. Leave the store.".format(money))
-                    if rationsmenu is "2":
-                        rationsloop=False
-                    if rationsmenu is "3"
-                        areyousure=input("Are you sure you would like to leave the store and stop buying supplies?")
-                    
+                    endlessloop=True
+                    while endlessloop is True:
+                        rationsmenu=input("You have {0} dollars left. Press: 1. to buy more rations, 2. Go back to store, 3. Leave the store.".format(money))
+                        if rationsmenu is "1":
+                            
+                        if rationsmenu is "2":
+                            rationsloop=False
+                        if rationsmenu is "3"
+                            areyousure=input("Are you sure you would like to leave the store and stop buying supplies?")
+                            if areyousure is "yes":
+                                falseholder=False
+                            if areyousure is "no"
+                                
                     
         if storemenu is "2":
             
