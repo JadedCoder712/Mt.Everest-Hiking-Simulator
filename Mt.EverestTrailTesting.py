@@ -42,7 +42,7 @@ while truth_holder is True:
         truth_holder=False
 if store is "1":
     while truth_holder is False:
-        item_menu=input("You have {0} rations, {1} sets of clothes, {2} ice picks, {3} tents, {4} canisters of fuel, and {5} liters of water. 1. Go to store, 2. Learn more about each item.".format(rations, clothes, icepicks, tents, fuel, water)) 
+        item_menu=input("You have {0} rations, {1} sets of clothes, {2} ice picks, {3} tents, {4} canisters of fuel, and {5} liters of water. 1. Go to store, 2. Learn more about each item.".format(rations, clothes, ice_picks, tents, fuel, water)) 
         if item_menu is "2":
             input("Rations are what keep you alive. Without rations, your health will get worse. Clothes are what keep you warm. If they get wet, you will need a new set of clothes. If you do not change clothes or dry your clothes, you will get cold and your health will get worse. Ice picks help you scale ice walls. Ice picks break, so you will need to make sure to have some at all times. Tents are what you sleep in. These can break, and if they do and you not repair it or get a new one, you cannot sleep. Fuel is what you use to heat up rations to eat, as well as to melt snow to make water. Water is another necessary element to survive. Press Enter to continue.") 
         if item_menu is "1":
@@ -68,7 +68,7 @@ if item_menu is "1":
                             endless_loop=False
                         if rations_menu is "2":
                             rations_loop=False
-                        if rations_menu is "3"
+                        if rations_menu is "3":
                             are_you_sure=input("Are you sure you would like to leave the store and stop buying supplies?")
                             if are_you_sure is "yes":
                                 false_holder=False
