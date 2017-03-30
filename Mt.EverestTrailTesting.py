@@ -1,4 +1,9 @@
-
+rations=0
+clothes=0
+icepicks=0
+tents=0
+fuel=0
+water=0
 thehike=1
 falseholder=True
 truthholder=True
@@ -36,4 +41,5 @@ while truthholder is True:
         truthholder=False
 if store is "1":
     while truthholder is False:
-        itemmenu=input("You have {0} rations, {1} sets of clothes, {2} ice picks, {3} tents, {4} canisters of fuel, and {5} liters of water. 1. Go to store, 2. ) 
+        itemmenu=input("You have {0} rations, {1} sets of clothes, {2} ice picks, {3} tents, {4} canisters of fuel, and {5} liters of water. 1. Go to store, 2. Learn more about each item.".format(rations, clothes, icepicks, tents, fuel, water)) 
+        
