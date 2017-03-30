@@ -7,6 +7,7 @@ water=0
 thehike=1
 falseholder=True
 truthholder=True
+thehike=1
 while truthholder is True:
     gamemenu=input("Welcome to Kathmandu! You may: Press 1 to Start the Hike, press 2 to learn more about the trek up Mt. Everest, press 3 to see the map of the Mt. Everest trek, or press 4 to quit the program.")
     if gamemenu is "2":
@@ -46,10 +47,13 @@ if store is "1":
             input("Rations are what keep you alive. Without rations, your health will get worse. Clothes are what keep you warm. If they get wet, you will need a new set of clothes. If you do not change clothes or dry your clothes, you will get cold and your health will get worse. Ice picks help you scale ice walls. Ice picks break, so you will need to make sure to have some at all times. Tents are what you sleep in. These can break, and if they do and you not repair it or get a new one, you cannot sleep. Fuel is what you use to heat up rations to eat, as well as to melt snow to make water. Water is another necessary element to survive. Press Enter to continue.") 
         if itemmenu is "1":
             truthholder is True
-falseholder=True
 if itemmenu is "1":
+    falseholder=True
     while falseholder is True:
+        storemenu=input("Welcome to Mt. Everest Equipment Store! We sell at the lowest prices in all of the Himalayas. We sell: 1. 
         
+if thehike==1:
+    
             
             
             
