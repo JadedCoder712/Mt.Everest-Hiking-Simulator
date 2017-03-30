@@ -1,3 +1,5 @@
+
+falseholder=True
 truthholder=True
 while truthholder is True:
     gamemenu=input("Welcome to Kathmandu! You may: Press 1 to Start the Hike, press 2 to learn more about the trek up Mt. Everest, press 3 to see the map of the Mt. Everest trek, or press 4 to quit the program.")
@@ -24,4 +26,5 @@ while truthholder is False:
         truthholder=True
 while truthholder is True:
     store=input("You will need to buy supplies for the expedition. Press 1 to go to the store, or press 2 to go on the hike without supplies.")
-    if 
+    if store is "2":
+        
