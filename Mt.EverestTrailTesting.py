@@ -43,5 +43,4 @@ if store is "1":
     while truthholder is False:
         itemmenu=input("You have {0} rations, {1} sets of clothes, {2} ice picks, {3} tents, {4} canisters of fuel, and {5} liters of water. 1. Go to store, 2. Learn more about each item.".format(rations, clothes, icepicks, tents, fuel, water)) 
         if itemmenu is "2":
-            input("youtube money")
-            truthholder=True
+            input("Rations are what keep you alive. Without rations, your health will get worse. Clothes are what keep you warm. If they 
