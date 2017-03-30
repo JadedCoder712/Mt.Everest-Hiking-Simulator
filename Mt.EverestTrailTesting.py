@@ -1,3 +1,4 @@
+
 thehike=1
 falseholder=True
 truthholder=True
@@ -30,3 +31,9 @@ while truthholder is True:
         areyousure=input("Are you sure? The hike up Mount Everest is long and dangerous, and there will not be too many opportunities to buy supplies during the hike. Please type 'yes' or 'no' to confirm your choice.")
         if areyousure is "yes":
             thehike=1
+            truthholder=False
+    if store is "1":
+        truthholder=False
+if store is "1":
+    while truthholder is False:
+        itemmenu=input("You have {0} rations
