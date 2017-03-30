@@ -50,7 +50,7 @@ if store is "1":
 if itemmenu is "1":
     falseholder=True
     while falseholder is True:
-        storemenu=input("Welcome to Mt. Everest Equipment Store! We sell at the lowest prices in all of the Himalayas. We sell: 1. 
+        storemenu=input("Welcome to Mt. Everest Equipment Store! We sell at the lowest prices in all of the Himalayas. We sell: 1. Rations, 2. Clothes, 3. Ice picks, 4. Tents, 5. Fuel, 6. Water. What would you like to buy?")
         
 if thehike==1:
     
