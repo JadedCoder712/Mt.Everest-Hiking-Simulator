@@ -22,3 +22,6 @@ while truthholder is False:
     if playertype is "3":
         money=6,500
         truthholder=True
+while truthholder is True:
+    store=input("You will need to buy supplies for the expedition. Press 1 to go to the store, or press 2 to go on the hike without supplies.")
+    if 
