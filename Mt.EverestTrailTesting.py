@@ -1,4 +1,4 @@
-
+thehike=1
 falseholder=True
 truthholder=True
 while truthholder is True:
@@ -27,4 +27,6 @@ while truthholder is False:
 while truthholder is True:
     store=input("You will need to buy supplies for the expedition. Press 1 to go to the store, or press 2 to go on the hike without supplies.")
     if store is "2":
-        areyousure=input("Are you sure? The hike up Mount Everest
+        areyousure=input("Are you sure? The hike up Mount Everest is long and dangerous, and there will not be too many opportunities to buy supplies during the hike. Please type 'yes' or 'no' to confirm your choice.")
+        if areyousure is "yes":
+            thehike=1
