@@ -55,7 +55,7 @@ if item_menu is "1":
             rations_loop=True
             while rations_loop is True:
                 rations_inp=input("Rations are sold in packs of ten. How many packs of rations would you like to buy at $14 each?")
-                max_rations=round(money-(int(rationsinp)*14))
+                max_rations=round(money-(int(rations_inp)*14))
                 if max_rations < 0:
                     input("You do not have enough money to buy all those! Press Enter to continue.")
                 if max_rations >= 0:
