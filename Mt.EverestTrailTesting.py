@@ -96,11 +96,11 @@ if item_menu is "1":
                         if clothes_menu is "2":
                             clothes_loop=False
                             endless_loop=False
-                        if rations_menu is "3":
+                        if clothes_menu is "3":
                             are_you_sure=input("Are you sure you would like to leave the store and stop buying supplies?")
                             if are_you_sure is "yes":
                                 false_holder=False
-                                rations_loop=False
+                                clothes_loop=False
                                 endless_loop=False 
         if store_menu is "3":
             
