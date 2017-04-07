@@ -8,6 +8,9 @@ the_hike=1
 false_holder=True
 truth_holder=True
 the_hike=1
+
+
+
 while truth_holder is True:
     game_menu=input("Welcome to Kathmandu! You may: Press 1 to Start the Hike, press 2 to learn more about the trek up Mt. Everest, press 3 to see the map of the Mt. Everest trek, or press 4 to quit the program.")
     if game_menu is "2":
@@ -54,7 +57,7 @@ if item_menu is "1":
         if store_menu is "1":
             rations_loop=True
             while rations_loop is True:
-                rations_inp=input("You have ${0}. Rations are sold in packs of ten. How many packs of rations would you like to buy at $14 each?".format(money))
+                rations_inp=input("You have ${0}. Rations are sold in packs of ten. How many packs of rations would you like to buy at $14 each? I would recommend buying 40 pounds for each person in your company to start.".format(money))
                 max_rations=round(money-((int(rations_inp))*14))
                 if max_rations < 0:
                     input("You do not have enough money to buy all those! Press Enter to continue.")
@@ -75,10 +78,30 @@ if item_menu is "1":
                                 false_holder=False
                                 rations_loop=False
                                 endless_loop=False 
-                    
-        """
         if store_menu is "2":
-            
+            clothes_loop=True
+            while clothes_loop is True:
+                clothes_inp=input("You have ${0}. Clothes are sold in sets. How many sets of clothes would you like to buy at $50 each? I would recommend buying two sets for each person in your party to start.".format(money))
+                max_clothes=round(money-((int(clothes_inp))*14))
+                if max_clothes < 0:
+                    input("You do not have enough money to buy all those! Press Enter to continue.")
+                if max_rations >= 0:
+                    clothes=clothes+(int(clothes_inp)*10)
+                    money=money-(int(clothes_inp)*14)
+                    endless_loop=True
+                    while endless_loop is True:
+                        clothes_menu=input("You have {0} dollars left. Press: 1. to buy more clothes, 2. Go back to store, 3. Leave the store.".format(money))
+                        if clothes_menu is "1":
+                            endless_loop=False
+                        if clothes_menu is "2":
+                            clothes_loop=False
+                            endless_loop=False
+                        if rations_menu is "3":
+                            are_you_sure=input("Are you sure you would like to leave the store and stop buying supplies?")
+                            if are_you_sure is "yes":
+                                false_holder=False
+                                rations_loop=False
+                                endless_loop=False 
         if store_menu is "3":
             
         if store_menu is "4":
@@ -90,7 +113,7 @@ if item_menu is "1":
         if store_menu is "7":
             
         if store_menu is "8":
-            """
+            
             
         
 if the_hike==1:
