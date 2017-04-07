@@ -142,18 +142,41 @@ if item_menu is "1":
                         tents_menu=input("You have {0} dollars left. Press: 1. to buy more tents, 2. Go back to store, 3. Leave the store. ".format(money))
                         if tents_menu is "1":
                             endless_loop=False
-                        if ice_picks_menu is "2":
-                            ice_picks_loop=False
+                        if tents_menu is "2":
+                            tents_loop=False
                             endless_loop=False
-                        if ice_picks_menu is "3":
+                        if tents_menu is "3":
                             are_you_sure=input("Are you sure you would like to leave the store and stop buying supplies? ")
                             if are_you_sure is "yes":
                                 false_holder=False
-                                ice_picks_loop=False
+                                tents_loop=False
                                 endless_loop=False
                                 
         if store_menu is "5":
-            
+            fuel_loop=True
+            while fuel_loop is True:
+                fuel_inp=input("You have ${0}. Fuel is sold in packs of 3 cans. How many packs of fuel would you like to buy at $30 each? I would recommend buying ten packs to start. ".format(money))
+                max_fuel=round(money-((int(fuel_inp))*30))
+                if max_fuel < 0:
+                    input("You do not have enough money to buy all those! Press Enter to continue.")
+                if max_fuel >= 0:
+                    fuel=fuel+(int(fuel_inp)*3)
+                    money=money-(int(fuel_inp)*30)
+                    endless_loop=True
+                    while endless_loop is True:
+                        fuel_menu=input("You have {0} dollars left. Press: 1. to buy more fuel, 2. Go back to store, 3. Leave the store. ".format(money))
+                        if fuel_menu is "1":
+                            endless_loop=False
+                        if fuel_menu is "2":
+                            fuel_loop=False
+                            endless_loop=False
+                        if fuel_menu is "3":
+                            are_you_sure=input("Are you sure you would like to leave the store and stop buying supplies? ")
+                            if are_you_sure is "yes":
+                                false_holder=False
+                                fuel_loop=False
+                                endless_loop=False
+"""
         if store_menu is "6":
             
         if store_menu is "7":
