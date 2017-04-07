@@ -57,7 +57,7 @@ if item_menu is "1":
         if store_menu is "1":
             rations_loop=True
             while rations_loop is True:
-                rations_inp=input("You have ${0}. Rations are sold in packs of ten. How many packs of rations would you like to buy at $14 each? I would recommend buying 40 pounds for each person in your company to start.".format(money))
+                rations_inp=input("You have ${0}. Rations are sold in packs of ten. How many packs of rations would you like to buy at $14 each? I would recommend buying 40 pounds for each person in your company to start. ".format(money))
                 max_rations=round(money-((int(rations_inp))*14))
                 if max_rations < 0:
                     input("You do not have enough money to buy all those! Press Enter to continue.")
@@ -66,14 +66,14 @@ if item_menu is "1":
                     money=money-(int(rations_inp)*14)
                     endless_loop=True
                     while endless_loop is True:
-                        rations_menu=input("You have {0} dollars left. Press: 1. to buy more rations, 2. Go back to store, 3. Leave the store.".format(money))
+                        rations_menu=input("You have {0} dollars left. Press: 1. to buy more rations, 2. Go back to store, 3. Leave the store. ".format(money))
                         if rations_menu is "1":
                             endless_loop=False
                         if rations_menu is "2":
                             rations_loop=False
                             endless_loop=False
                         if rations_menu is "3":
-                            are_you_sure=input("Are you sure you would like to leave the store and stop buying supplies?")
+                            are_you_sure=input("Are you sure you would like to leave the store and stop buying supplies? ")
                             if are_you_sure is "yes":
                                 false_holder=False
                                 rations_loop=False
@@ -81,32 +81,77 @@ if item_menu is "1":
         if store_menu is "2":
             clothes_loop=True
             while clothes_loop is True:
-                clothes_inp=input("You have ${0}. Clothes are sold in sets. How many sets of clothes would you like to buy at $50 each? I would recommend buying two sets for each person in your party to start.".format(money))
-                max_clothes=round(money-((int(clothes_inp))*14))
+                clothes_inp=input("You have ${0}. Clothes are sold in sets. How many sets of clothes would you like to buy at $50 each? I would recommend buying two sets for each person in your party to start. ".format(money))
+                max_clothes=round(money-((int(clothes_inp))*50))
                 if max_clothes < 0:
                     input("You do not have enough money to buy all those! Press Enter to continue.")
                 if max_clothes >= 0:
-                    clothes=clothes+(int(clothes_inp)*10)
-                    money=money-(int(clothes_inp)*14)
+                    clothes=clothes+(int(clothes_inp)*1)
+                    money=money-(int(clothes_inp)*50)
                     endless_loop=True
                     while endless_loop is True:
-                        clothes_menu=input("You have {0} dollars left. Press: 1. to buy more clothes, 2. Go back to store, 3. Leave the store.".format(money))
+                        clothes_menu=input("You have {0} dollars left. Press: 1. to buy more clothes, 2. Go back to store, 3. Leave the store. ".format(money))
                         if clothes_menu is "1":
                             endless_loop=False
                         if clothes_menu is "2":
                             clothes_loop=False
                             endless_loop=False
                         if clothes_menu is "3":
-                            are_you_sure=input("Are you sure you would like to leave the store and stop buying supplies?")
+                            are_you_sure=input("Are you sure you would like to leave the store and stop buying supplies? ")
                             if are_you_sure is "yes":
                                 false_holder=False
                                 clothes_loop=False
                                 endless_loop=False 
-"""
         if store_menu is "3":
-            
+            ice_picks_loop=True
+            while ice_picks_loop is True:
+                ice_picks_inp=input("You have ${0}. Ice picks are sold individually. How many Ice Picks would you like to buy at $300 each? I would recommend buying three to start. ".format(money))
+                max_ice_picks=round(money-((int(ice_picks_inp))*300))
+                if max_ice_picks < 0:
+                    input("You do not have enough money to buy all those! Press Enter to continue.")
+                if max_ice_picks >= 0:
+                    ice_picks=ice_picks+(int(ice_picks_inp)*1)
+                    money=money-(int(ice_picks_inp)*300)
+                    endless_loop=True
+                    while endless_loop is True:
+                        ice_picks_menu=input("You have {0} dollars left. Press: 1. to buy more ice picks, 2. Go back to store, 3. Leave the store. ".format(money))
+                        if ice_picks_menu is "1":
+                            endless_loop=False
+                        if ice_picks_menu is "2":
+                            ice_picks_loop=False
+                            endless_loop=False
+                        if ice_picks_menu is "3":
+                            are_you_sure=input("Are you sure you would like to leave the store and stop buying supplies? ")
+                            if are_you_sure is "yes":
+                                false_holder=False
+                                ice_picks_loop=False
+                                endless_loop=False
+                                
         if store_menu is "4":
-            
+            tents_loop=True
+            while tents_loop is True:
+                tents_inp=input("You have ${0}. Tents are sold individually. How many tents would you like to buy at $500 each? I would recommend buying three to start. ".format(money))
+                max_tents=round(money-((int(tents_inp))*500))
+                if max_tents < 0:
+                    input("You do not have enough money to buy all those! Press Enter to continue.")
+                if max_tents >= 0:
+                    tents=tents+(int(tents_inp)*1)
+                    money=money-(int(tents_inp)*500)
+                    endless_loop=True
+                    while endless_loop is True:
+                        tents_menu=input("You have {0} dollars left. Press: 1. to buy more tents, 2. Go back to store, 3. Leave the store. ".format(money))
+                        if tents_menu is "1":
+                            endless_loop=False
+                        if ice_picks_menu is "2":
+                            ice_picks_loop=False
+                            endless_loop=False
+                        if ice_picks_menu is "3":
+                            are_you_sure=input("Are you sure you would like to leave the store and stop buying supplies? ")
+                            if are_you_sure is "yes":
+                                false_holder=False
+                                ice_picks_loop=False
+                                endless_loop=False
+                                
         if store_menu is "5":
             
         if store_menu is "6":
