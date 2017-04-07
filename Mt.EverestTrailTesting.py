@@ -176,8 +176,32 @@ if item_menu is "1":
                                 false_holder=False
                                 fuel_loop=False
                                 endless_loop=False
-"""
+
         if store_menu is "6":
+            water_loop=True
+            while water_loop is True:
+                water_inp=input("You have ${0}. Water is sold in 5 liter packages. How many 5 liter packages of water would you like to buy at $20 each? I would recommend buying fifteen packs to start. ".format(money))
+                max_water=round(money-((int(water_inp))*20))
+                if max_water < 0:
+                    input("You do not have enough money to buy all those! Press Enter to continue.")
+                if max_water >= 0:
+                    water=water+(int(water_inp)*5)
+                    money=money-(int(water_inp)*20)
+                    endless_loop=True
+                    while endless_loop is True:
+                        water_menu=input("You have {0} dollars left. Press: 1. to buy more water, 2. Go back to store, 3. Leave the store. ".format(money))
+                        if water_menu is "1":
+                            endless_loop=False
+                        if water_menu is "2":
+                            water_loop=False
+                            endless_loop=False
+                        if water_menu is "3":
+                            are_you_sure=input("Are you sure you would like to leave the store and stop buying supplies? ")
+                            if are_you_sure is "yes":
+                                false_holder=False
+                                water_loop=False
+                                endless_loop=False
+"""
             
         if store_menu is "7":
             
