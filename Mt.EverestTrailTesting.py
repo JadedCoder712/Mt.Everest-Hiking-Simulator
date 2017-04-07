@@ -85,7 +85,7 @@ if item_menu is "1":
                 max_clothes=round(money-((int(clothes_inp))*14))
                 if max_clothes < 0:
                     input("You do not have enough money to buy all those! Press Enter to continue.")
-                if max_rations >= 0:
+                if max_clothes >= 0:
                     clothes=clothes+(int(clothes_inp)*10)
                     money=money-(int(clothes_inp)*14)
                     endless_loop=True
@@ -102,6 +102,7 @@ if item_menu is "1":
                                 false_holder=False
                                 clothes_loop=False
                                 endless_loop=False 
+"""
         if store_menu is "3":
             
         if store_menu is "4":
@@ -113,7 +114,7 @@ if item_menu is "1":
         if store_menu is "7":
             
         if store_menu is "8":
-            
+"""
             
         
 if the_hike==1:
