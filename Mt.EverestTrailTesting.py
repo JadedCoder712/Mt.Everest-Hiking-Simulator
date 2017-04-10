@@ -57,7 +57,7 @@ if item_menu is "1":
         if store_menu is "1":
             rations_loop=True
             while rations_loop is True:
-                rations_inp=input("You have ${0}. Rations are sold in packs of ten. How many packs of rations would you like to buy at $14 each? I would recommend buying 40 pounds for each person in your company to start. ".format(money))
+                rations_inp=input("You have ${0}. Rations are sold in packs of ten. How many packs of rations would you like to buy at $14 each? I would recommend buying 20 packs for each person in your company to start. ".format(money))
                 max_rations=round(money-((int(rations_inp))*14))
                 if max_rations < 0:
                     input("You do not have enough money to buy all those! Press Enter to continue.")
@@ -201,15 +201,20 @@ if item_menu is "1":
                                 false_holder=False
                                 water_loop=False
                                 endless_loop=False
-"""
+
             
         if store_menu is "7":
+            item_menu=input("You have {0} rations, {1} sets of clothes, {2} ice picks, {3} tents, {4} canisters of fuel, and {5} liters of water. Press 2 to learn more about each item.".format(rations, clothes, ice_picks, tents, fuel, water)) 
+            if item_menu is "2":
+                input("Rations are what keep you alive. Without rations, your health will get worse. Clothes are what keep you warm. If they get wet, you will need a new set of clothes. If you do not change clothes or dry your clothes, you will get cold and your health will get worse. Ice picks help you scale ice walls. Ice picks break, so you will need to make sure to have some at all times. Tents are what you sleep in. These can break, and if they do and you not repair it or get a new one, you cannot sleep. Fuel is what you use to heat up rations to eat, as well as to melt snow to make water. Water is another necessary element to survive. Press Enter to continue.")
+            if item_menu is "help me":
+                raise SystemExit("Goodbye")
+"""
             
-        if store_menu is "8":
+            if store_menu is "8":
 """
             
         
 if the_hike==1:
     input("The hike will continue from here.")
-            
-            
+      
