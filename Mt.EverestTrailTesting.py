@@ -209,10 +209,12 @@ if item_menu is "1":
                 input("Rations are what keep you alive. Without rations, your health will get worse. Clothes are what keep you warm. If they get wet, you will need a new set of clothes. If you do not change clothes or dry your clothes, you will get cold and your health will get worse. Ice picks help you scale ice walls. Ice picks break, so you will need to make sure to have some at all times. Tents are what you sleep in. These can break, and if they do and you not repair it or get a new one, you cannot sleep. Fuel is what you use to heat up rations to eat, as well as to melt snow to make water. Water is another necessary element to survive. Press Enter to continue.")
             if item_menu is "help me":
                 raise SystemExit("Goodbye")
-"""
+
             
             if store_menu is "8":
-"""
+                are_you_sure=input("Are you sure you would like to leave the store and stop buying supplies? ")
+                if are_you_sure is "yes":
+                    false_holder=False
             
         
 if the_hike==1:
