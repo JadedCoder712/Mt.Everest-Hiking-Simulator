@@ -211,10 +211,10 @@ if item_menu is "1":
                 raise SystemExit("Goodbye")
 
             
-            if store_menu is "8":
-                are_you_sure=input("Are you sure you would like to leave the store and stop buying supplies? ")
-                if are_you_sure is "yes":
-                    false_holder=False
+        if store_menu is "8":
+            are_you_sure=input("Are you sure you would like to leave the store and stop buying supplies? ")
+            if are_you_sure is "yes":
+                false_holder=False
             
         
 if the_hike==1:
